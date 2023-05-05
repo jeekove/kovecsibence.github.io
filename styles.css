@@ -263,7 +263,7 @@ section p{
   height: 20vh;
   background-color: rgb(61, 61, 61);
 }
-.bottom h3{
+.bottom a{
   font-size: 20px;
   margin-top: 20px;
   color: #ffffff;
@@ -376,7 +376,7 @@ section p{
      .bicon{
       margin-left: 50px;
      }
-     .bottom h3{
+     .bottom a{
       margin-left: 44%;
       margin-right: 44%;
      }
@@ -533,7 +533,7 @@ section p{
     margin-left: 25px;
     margin-right: 25px;
    }
-   .bottom h3{
+   .bottom a{
     font-size: 18px;
     margin-left: 40%;
     margin-right: 40%;
