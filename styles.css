@@ -10,6 +10,18 @@ body{
  background-image: linear-gradient(245deg, #000000
  0%, #13007c);
 }
+html::-webkit-scrollbar {
+  width: 10px; 
+}
+
+html::-webkit-scrollbar-track {
+ background-color:  #000000;
+}
+
+html::-webkit-scrollbar-thumb {
+background: #1900a5;
+border-radius: 10px;
+}
 .backround{
   background-image: url(wave.svg);
   background-position: 0 600px;
@@ -133,8 +145,9 @@ body{
   margin-right: 15%;
 }
 .jobs section{
-  background-color: rgb(240, 240, 240);
-  height: 450px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;  
+  background-color: rgb(255, 255, 255);
+  height: 400px;
   width: 350px;
   border-radius: 30px;
   margin-bottom: 100px;
@@ -148,7 +161,7 @@ section h1{
   font-size: 35px;
 }
 section p{
-  height: 90px;
+  height: 50px;
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
@@ -159,11 +172,13 @@ section p{
   margin-right: 25px;
 }
 .jbutton{
-  margin-top: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  bottom: 0;
+  right: 50%;
+  left: 50%;
+  margin-top: 150px;
 }
 .cont a{
   color: #ffffff;
@@ -202,6 +217,7 @@ section p{
   padding-top: 50px;
 }
 .cube{
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   height: 500px;
   margin-top: 130px;
   background-color: #ffffff;
@@ -279,6 +295,11 @@ section p{
   display: flex;
   align-items: center;
   justify-content: center;
+<<<<<<< Updated upstream
+=======
+  margin-right: 46%;
+  margin-left: 46%;
+>>>>>>> Stashed changes
 }
 .bottomc{
   padding-top: 4%;
@@ -348,6 +369,9 @@ section p{
       font-size: 15px;
       height: 120px;
      }
+     .jbutton{
+      margin-top: 100px;
+    }
      .cont a{
       padding: 10px 18px;
       font-size: 15px;
@@ -357,8 +381,8 @@ section p{
       font-size: 15px;
      }
      .cube{
-     margin-left: 20%;
-     margin-right: 20%; 
+     margin-left: 25%;
+     margin-right: 25%; 
      } 
      .ctitle h1{
       font-size: 35px;
@@ -378,6 +402,7 @@ section p{
      .bicon{
       margin-left: 100px;
      }
+<<<<<<< Updated upstream
 }
 @media (min-width: 320px) and (max-width: 500px) {
   section p{
@@ -385,6 +410,11 @@ section p{
   }
 }
 @media (min-width: 320px) and (max-width: 1200px) {
+=======
+  }
+
+@media (min-width: 320px) and (max-width: 1000px) {
+>>>>>>> Stashed changes
  
   .container{
     margin-left: 5%;
@@ -429,7 +459,11 @@ section p{
    }
    .arrow i{
     font-size: 50px;
+<<<<<<< Updated upstream
     margin-top: 70vh;
+=======
+    margin-top: 25vh;
+>>>>>>> Stashed changes
    }
    .jobs{
     margin-left: 15%;
@@ -455,6 +489,9 @@ section p{
     font-size: 15px;
     height: 9vh;
    }
+   .jbutton{
+    margin-top: 150px;
+  }
    .contact{
     height: 550px;
    }
@@ -531,4 +568,16 @@ section p{
     margin-top: 30px;
     margin-left: 16%;
    }
+<<<<<<< Updated upstream
 }
+=======
+   .bottom a{
+    font-size: 18px;
+    margin-left: 38%;
+    margin-right: 38%;
+   }
+   .bottom span{
+    padding-left: 5px;
+   }
+  }
+>>>>>>> Stashed changes
