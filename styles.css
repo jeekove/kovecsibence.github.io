@@ -213,16 +213,25 @@ section p{
   background-size: cover;
   height: 90vh;
 }
+#contact-section {
+  opacity: 1; /* Kezdetben láthatatlan */
+  transition: opacity 2s;
+}
+
+#contact-section.show {
+  opacity: 1; /* Az animáció után láthatóvá válik */
+}
 .ctitle{
   padding-top: 50px;
 }
 .cube{
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   height: 500px;
   margin-top: 130px;
   background-color: #ffffff;
-  margin-left: 25%;
-  margin-right: 25%; 
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
   border-radius: 30px;
 }
 .ctitle p{
@@ -242,13 +251,12 @@ section p{
 .cube h2{
   color: #ffffff;
   margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
   background-color: blue;
-  padding: 20px;
-  margin-left: 25%;
-  margin-right: 25%; 
+  padding: 20px 50px;
+  width: 350px;
   border-radius: 20px;
 }
 .cube h2::selection{
@@ -269,9 +277,9 @@ section p{
   margin-top: 50px;
 }
 .cicons i{
+  justify-content: space-around;
+  align-items: center;
   font-size: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
   color: #ffffff;
   background-color: blue;
   padding: 30px 30px;
@@ -285,37 +293,34 @@ section p{
   transition: 0.5s;
 }
 .bottom{
-  height: 20vh;
+  height: 22vh;
   background-color: rgb(61, 61, 61);
 }
+.bicon{
+  display: flex;;
+}
 .bottom a{
-  font-size: 20px;
-  margin-top: 20px;
+  margin: 20px;
+  font-size: 30px;
   color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
   margin-right: 46%;
   margin-left: 46%;
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 }
 .bottomc{
   padding-top: 4%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   justify-items: center;
-}
-.bottom i{
-  color: #ffffff;
-  font-size: 30px;
-  line-height: 40px;
-  margin-left: 20px;
-}
-.bicon{
-  margin-left: 230px;
 }
 .bottom h2{
   font-size: 17px;
@@ -323,10 +328,14 @@ section p{
 }
 .bottom h1{
   font-size: 20px;
-  margin-right: 200px;
   background-color: aliceblue;
   padding: 10px 20px;
   border-radius: 20px;
+}
+.bottom h3{
+  margin-top: 50px;
+  text-align: center;
+  color: white;
 }
 .bottom span{
   color: blue;
@@ -381,26 +390,38 @@ section p{
       font-size: 15px;
      }
      .cube{
-     margin-left: 25%;
-     margin-right: 25%; 
+      margin-left: auto;
+      margin-right: auto;
+      width: 700px;
      } 
      .ctitle h1{
       font-size: 35px;
      }
      .ctitle h2{
       font-size: 20px;
+      width: 300px;
      }
      .cicons i{
       font-size: 25px;
       margin-left: 25px;
       margin-right: 25px;
      }
+
      .bottom h1{
+<<<<<<< Updated upstream
       margin-right: 80px;
       font-size: 18px;
      }
      .bicon{
       margin-left: 100px;
+=======
+      font-size: 18px;
+     }
+     .bicon{
+     }
+     .bottom a{
+      margin: 10px;
+>>>>>>> Stashed changes
      }
 <<<<<<< Updated upstream
 }
@@ -480,6 +501,7 @@ section p{
    }
    .jobscontent h2{
     font-size: 35px;
+    padding-top: 50px;
    }
    section h1{
     padding-top: 30px;
@@ -493,13 +515,14 @@ section p{
     margin-top: 150px;
   }
    .contact{
-    height: 550px;
+    height: 700px;
    }
    .cube{
-    margin-top: 100px;
-    height: 300px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 310px;
+    width: 400px;
    }
    .ctitle h1{
     font-size: 25px;
@@ -509,8 +532,9 @@ section p{
     font-size: 15px;
     margin-top: 20px;
     padding: 12px;
-    margin-left: 8%;
-    margin-right: 8%; 
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
    }
    .cont a{
     padding: 13px 21px;
@@ -552,6 +576,7 @@ section p{
     display: flex;
     align-items: center;
     justify-content: center;
+<<<<<<< Updated upstream
     margin-right: 25%;
     margin-left: 25%;
    }
@@ -559,11 +584,24 @@ section p{
     margin-right: 20%;
     margin-left: 20%;
     text-align: center;
+=======
+    margin: auto;
+    width: 150px;
+    margin-top: 30px;
+    font-size: 15px;
+   }
+   .bottomc h2{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+>>>>>>> Stashed changes
     padding-top: 30px;
    }
    .bicon{
     margin-left: 8%;
    }
+<<<<<<< Updated upstream
    .bottomc i{
     margin-top: 30px;
     margin-left: 16%;
@@ -571,11 +609,12 @@ section p{
 <<<<<<< Updated upstream
 }
 =======
+=======
+>>>>>>> Stashed changes
    .bottom a{
-    font-size: 18px;
-    margin-left: 38%;
-    margin-right: 38%;
+    margin-top: 50px;
    }
+
    .bottom span{
     padding-left: 5px;
    }

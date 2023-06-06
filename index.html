@@ -20,11 +20,11 @@
         <div class="icons">
           <a href="https://www.instagram.com/be_kove/"><i class="fa-brands fa-instagram"></i></a>
           <a href="https://twitter.com/BenceKovecsi"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-patreon"></i></a>
+          <a href="https://www.patreon.com/user?u=94600893"><i class="fa-brands fa-patreon"></i></a>
         </div>
         <div class="button">
-          <a href="#">Contact</a>
-          <i class="fa-solid fa-message"></i>
+          <a onclick="scrollToContact()">Contact</a>
+          <i onclick="scrollToContact()" class="fa-solid fa-message"></i>
         </div>
       </li>
     </nav>
@@ -82,7 +82,7 @@
       </div>
     </div>
   </div>
-  <div class="contact">
+  <div class="contact" id="contact-section">
      <div class="ctitle">
       <div class="cube">
        <h1>Contact me</h1>
@@ -91,7 +91,7 @@
           <div class="cicons">
             <a href="https://www.instagram.com/be_kove/"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://twitter.com/BenceKovecsi"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-patreon"></i></a>
+            <a href="https://www.patreon.com/user?u=94600893"><i class="fa-brands fa-patreon"></i></a>
             <a href="https://xyl.lol/kove"><i class="fa-brands fa-discord"></i></a>
           </div>
          </div>
@@ -100,14 +100,27 @@
      <div class="bottom">
       <div class="bottomc">
       <div class="bicon">
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-twitter"></i>
-        <i class="fa-brands fa-github"></i>
+        <a href="https://www.instagram.com/be_kove/"><i class="fa-brands fa-instagram"></i></a> 
+        <a href="https://twitter.com/BenceKovecsi"><i class="fa-brands fa-twitter"></i></a>  
+        <a href="https://www.patreon.com/user?u=94600893"><i class="fa-brands fa-patreon"></i></a>    
       </div>
       <h2>"There is no such thing as a boring project. There are only boring executions."</h2>
       <h1>Desinged by <span> Köve</span></h1>
       </div>
+<<<<<<< Updated upstream
      <a>BETA v1.0</a>
+=======
+      <h3>BETA v2.0</h3>
+>>>>>>> Stashed changes
   </div>
+  <script>
+    function scrollToContact() {
+var contactSection = document.getElementById("contact-section");
+contactSection.classList.add("show");
+
+// Az animáció után elmozdítja a nézetet a kapcsolat részhez
+contactSection.scrollIntoView({ behavior: 'smooth' });
+}
+  </script>
 </body>
 </html>
