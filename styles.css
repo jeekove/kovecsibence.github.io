@@ -498,6 +498,10 @@ section p{
    .cube p{
     margin-top: 30px;
    }
+   .cube h2{
+    padding-left: 25px;
+     width: 220px;
+   }
    .cube i{
     margin-right: 5px;
   }
@@ -542,7 +546,6 @@ section p{
    }
    .bicon{
     margin-left: auto;
-
     display: flex;
     align-items: center;
     justify-content: center;
