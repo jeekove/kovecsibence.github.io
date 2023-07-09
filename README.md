@@ -1,1 +1,0 @@
-# kovecsibence.github.io
