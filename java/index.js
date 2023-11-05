@@ -38,5 +38,13 @@ function animateValue(obj, start, end, duration) {
     window.requestAnimationFrame(step);
   }
   
-  const obj = document.getElementById("value");
-  animateValue(obj, 100, 0, 5000);
+  const menuButton = document.getElementById("menuButton");
+  const menu = document.getElementById("menu");
+  
+  menuButton.addEventListener("click", () => {
+      menu.classList.toggle("active");
+  });
+  
+  menu.addEventListener("click", () => {
+      menu.classList.remove("active");
+  });
