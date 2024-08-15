@@ -1,0 +1,373 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    cursor: none;
+}
+body{
+    cursor: none;
+    background-color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+@font-face {
+    font-family: navbar;
+    src: url(navbarfont.ttf);
+  }
+  @font-face {
+    font-family: title;
+    src: url(title.ttf);
+  }
+.cursor {
+    position: fixed;
+    top: -15px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid aliceblue;
+    background-color: rgba(0, 0, 0, 0.473);
+    border-radius: 50%;
+    backdrop-filter: blur(10px);
+    pointer-events: none; 
+    z-index: 1000; 
+    transition: transform 0.1s ease-out; 
+    will-change: transform;
+}
+.backimg{
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; background-size: cover;
+    background-image: url(background.png);
+    height: 100vh;
+}
+nav{
+ position: relative;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ color: rgb(255, 255, 255);
+ background-color: rgba(138, 138, 138, 0.171);
+ backdrop-filter: blur(10px);
+ box-shadow: rgba(99, 99, 99, 0.2) 0px 7px 29px 0px;
+ margin: 0 13%;
+ padding: 15px 2%;
+ border-radius: 50px;
+ top: 30px;
+ transition: 0.2s;
+}
+nav div img{
+    width: auto;
+    height: 30px;
+    margin-top: 4px;
+}
+nav .text{
+    font-weight: bold;
+    display: flex;
+}
+nav .text h1,h2,h3{
+    padding: 8px 0px 4px 0px;
+    color: aliceblue;
+}
+nav .text h1{
+ position: relative;
+ font-weight: bold;
+ font-family: navbar;
+ font-weight: 600;
+ font-size: 20px;
+ margin: 0 2vw;
+}
+nav .text h2{
+    position: relative;
+    font-weight: bold;
+    font-family: navbar;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 2vw;
+}
+nav .text h2::after{
+    content: "";
+    position: absolute;
+    background-color: #daa520;
+    height: 3px;
+    left: 0;
+    bottom: -15px;
+    width: 100%;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+nav .text h1::after{
+    content: "";
+    position: absolute;
+    background-color: #daa520;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -15px;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+.text h1:hover::after{
+    width: 100%;
+    transition: 0.3s;
+}
+.text h3{
+    position: relative;
+    font-weight: bold;
+    font-family: navbar;
+    font-weight: 600;
+    padding: 6px 30px 4px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.534);
+    transition: 0.2s;
+    border: 1px solid rgba(128, 128, 128, 0.151);
+}
+.wwm:hover{
+    background-color: rgba(128, 128, 128, 0.151);
+    border: 1px solid aliceblue;
+    transition: 0.2s;
+}
+.title{
+    margin: 20vh 0 0 13%;
+    transition: 0.2s;
+}
+.title h1{
+    color: aliceblue;
+    font-size: 25px;
+}
+.title .imgt img{
+    width: auto;
+    height: 120px;
+}
+.title .imgo img{
+    width: auto;
+    height: 25px;
+    margin: 3px;
+}
+.title p{
+    font-family: navbar;
+    font-weight: 100;   
+    width: 700px;
+    margin-top: 20px;
+    color: aliceblue;
+    font-size: 18px;
+}
+.button{
+    display: flex;
+    color: aliceblue;
+    margin: 30px 0 0 13%;
+    transition: 0.2s;
+}
+.button .conb{
+    box-shadow: rgba(112, 112, 112, 0.466) 0px 7px 29px 0px;
+    color: aliceblue;
+    display: flex;
+    align-items: center; 
+    font-family: navbar;
+    font-size: 25px;
+    padding: 6px;
+    border-radius: 50px;
+    transition: border-radius 0.3s;
+    background-color: rgba(128, 128, 128, 0.534);
+    width: auto; 
+}
+
+.button h1{
+    font-size: 20px;
+    padding: 7px 35px;
+    border-radius: 20px;
+    background-color: rgba(31, 31, 31, 0.863);
+    transition: opacity 0.3s;
+    white-space: nowrap;
+}
+
+.button i{
+    padding: 6px 13px 3px 13px; 
+    transition: left 0.3s, background 0.3s;
+    position: relative;
+    left: 0;
+    transition: 0.3s;
+}
+  .button .conb:hover h1 {
+      opacity: 0;
+  }
+  .button .conb:hover i {
+    transform: translateX(-50%);
+    left: -28%;
+    transition: 0.3s;
+  }
+  .button .conb:hover{
+    background-color: #947017;
+    transition: border-radius 0.3s;
+    box-shadow: #947017 0px 7px 29px 0px;
+
+  }
+
+
+
+.social{
+ position: absolute;
+ bottom: 70px;
+ left: 14%;
+ transition: 0.2s;
+}
+.social .icons i{
+    color: aliceblue;
+    margin: 0 20px;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.social .icons i:hover{
+    transition: 0.3s;
+    scale: 1.5;
+    text-shadow: rgb(0, 255, 255) 0px 0 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.htitle .himg{
+    margin: 15% 0 0 150px;
+}
+.htitle .himg img{
+    height: 80px;
+    width: auto;
+}
+.hbutton {
+    margin: 2% 0px 0px 150px;
+    box-shadow: rgba(112, 112, 112, 0.466) 0px 7px 29px 0px;
+    color: aliceblue;
+    display: inline-flex; 
+    font-family: navbar;
+    font-size: 25px;
+    padding: 6px 6px; 
+    border-radius: 50px;
+    transition: background-color 0.3s, box-shadow 0.3s, border-radius 0.3s; /* Átmenetek */
+    background-color: rgba(128, 128, 128, 0.534);
+}
+
+.hbutton h1 {
+    color: aliceblue;
+    font-size: 20px;
+    padding: 7px 20px; 
+    border-radius: 20px;
+    background-color: rgba(31, 31, 31, 0.863);
+    transition: opacity 0.3s, background-color 0.3s; /* Átmenetek */
+    white-space: nowrap;
+}
+
+.hbutton:hover h1 {
+    background: none;
+}
+
+.hbutton:hover {
+    background-color: #947017;
+    box-shadow: #947017 0px 7px 29px 0px;
+}
+
+    
+
+
+
+@media only screen and (max-width: 1150px) {
+    nav {
+        margin: 0 10%;
+        transition: 0.2s;
+        padding: 10px 20px;
+      }
+      nav .text{
+          display: none;
+      }
+      nav div img{
+          width: auto;
+          height: 25px;
+      }
+      .title{
+        margin: 20vh 0 0 10%;
+        transition: 0.2s;
+     }
+     .title .imgt img{
+        width: auto;
+        height: 100px;
+    }
+    .title .imgo img{
+        width: auto;
+        height: 20px;
+        margin: 3px;
+    
+    }
+    .title p{
+        font-family: navbar;
+        font-weight: 100;   
+        width: 500px;
+    }
+     .button{
+        margin: 30px 0 0 9%;
+        transition: 0.2s;
+     }
+     .button .conb{
+        scale: 0.9;
+     }
+     .social{
+        bottom: 70px;
+        left: 11%;
+        transition: 0.2s;
+       }
+}
+@media only screen and (max-width: 700px) {
+    nav {
+      margin: 0 5%;
+      transition: 0.2s;
+      padding: 10px 20px;
+    }
+    nav .text{
+        display: none;
+    }
+    nav div img{
+        width: auto;
+        height: 25px;
+    }
+    .title{
+        text-align: center;
+        transition: 0.2s;
+        margin: 0 20px;
+        margin-top: 25vh;
+     }
+     .title .imgt img{
+        width: auto;
+        height: 80px;
+    }
+    .title .imgo img{
+        width: auto;
+        height: 17px;
+    
+    }
+    .title p{ 
+        width: auto;
+        font-size: 15px;
+    }
+     .button{
+        margin: 20px 0;
+        transition: 0.2s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     .button .conb{
+        scale: 0.8;
+     }
+     .social{
+        position: absolute;
+        bottom: 50px;
+        left: 50%; /* Az elem bal széle a szülő szélességének 50%-ánál lesz */
+        transform: translateX(-50%); /* Az elem közepét igazítja a szülő közepéhez */
+        transition: 0.2s;
+        text-align: center;
+  }
+}
