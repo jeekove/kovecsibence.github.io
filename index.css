@@ -23,8 +23,8 @@ body{
     left: -10px;
     width: 20px;
     height: 20px;
-    border: 1px solid aliceblue;
-    background-color: rgba(0, 0, 0, 0.473);
+    border: 1px solid #a86b00;
+    background-color: #ffac1c15;
     border-radius: 50%;
     backdrop-filter: blur(10px);
     pointer-events: none; 
@@ -45,26 +45,22 @@ nav{
  justify-content: space-between;
  align-items: center;
  color: rgb(255, 255, 255);
- background-color: rgba(138, 138, 138, 0.171);
- backdrop-filter: blur(10px);
- box-shadow: rgba(99, 99, 99, 0.2) 0px 7px 29px 0px;
- margin: 0 13%;
- padding: 15px 2%;
+ margin: 0 250px;
+ padding: 15px 30px;
  border-radius: 50px;
  top: 30px;
- transition: 0.2s;
 }
 nav div img{
     width: auto;
-    height: 30px;
-    margin-top: 4px;
+    height: 60px;
+    padding: 0 20px;
 }
 nav .text{
     font-weight: bold;
     display: flex;
 }
 nav .text h1,h2,h3{
-    padding: 8px 0px 4px 0px;
+    padding: 5px 0px 4px 0px;
     color: aliceblue;
 }
 nav .text h1{
@@ -73,7 +69,8 @@ nav .text h1{
  font-family: navbar;
  font-weight: 600;
  font-size: 20px;
- margin: 0 2vw;
+ margin: 0 30px;
+ transition: 0.3s;
 }
 nav .text h2{
     position: relative;
@@ -81,15 +78,16 @@ nav .text h2{
     font-family: navbar;
     font-weight: 600;
     font-size: 20px;
-    margin: 0 2vw;
+    margin: 0 30px;
+    transition: 0.3s;
 }
 nav .text h2::after{
     content: "";
     position: absolute;
-    background-color: #daa520;
+    background-color: #FFAC1C;
     height: 3px;
     left: 0;
-    bottom: -15px;
+    bottom: -3px;
     width: 100%;
     transition: 0.3s;
     border-radius: 20px;
@@ -97,11 +95,11 @@ nav .text h2::after{
 nav .text h1::after{
     content: "";
     position: absolute;
-    background-color: #daa520;
+    background-color: #FFAC1C;
     height: 3px;
     width: 0;
     left: 0;
-    bottom: -15px;
+    bottom: -3px;
     transition: 0.3s;
     border-radius: 20px;
 }
@@ -111,51 +109,74 @@ nav .text h1::after{
 }
 .text h3{
     position: relative;
+    top: -3px;
     font-weight: bold;
     font-family: navbar;
+    padding: 7px 25px;
     font-weight: 600;
-    padding: 6px 30px 4px 30px;
     font-size: 20px;
     border-radius: 30px;
-    background-color: rgba(128, 128, 128, 0.534);
+    background-color: rgba(128, 128, 128, 0.055);
     transition: 0.2s;
-    border: 1px solid rgba(128, 128, 128, 0.151);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(128, 128, 128, 0.404);
 }
 .wwm:hover{
-    background-color: rgba(128, 128, 128, 0.151);
-    border: 1px solid aliceblue;
+    box-shadow: #ffac1c3a 0px 0px 20px 5px;
+    background-color: #ffac1c23;
+    border: 1px solid #FFAC1C;
     transition: 0.2s;
 }
 .title{
-    margin: 20vh 0 0 13%;
-    transition: 0.2s;
+    margin: 7% 0 0 300px;
+    max-width: 700px;
 }
 .title h1{
     color: aliceblue;
     font-size: 25px;
 }
-.title .imgt img{
-    width: auto;
-    height: 120px;
+.title .imgo h1{
+    font-size: 45px; 
+    position: relative;
+    top: 50px;
+    left: 7px;
 }
-.title .imgo img{
-    width: auto;
-    height: 25px;
-    margin: 3px;
+.title .imgt {
+    display: flex;
+}
+.title .imgt h1{
+    color: white; /* Szöveg színe */
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    color: rgba(0, 0, 0, 0);
+    font-size: 130px;
+    transition: 0.5s;
+}
+.title .imgt h2{
+    font-size: 100px;
+    margin: 27px 0 0 10px ;
+    color: #FFAC1C;
+    
+}
+.title .imgt h1:hover{
+    color: white; /* Szöveg színe */
+    -webkit-text-stroke: 2px #FFAC1C;
+    color: rgba(0, 0, 0, 0); 
+    transition: 0.5s;
 }
 .title p{
     font-family: navbar;
     font-weight: 100;   
-    width: 700px;
+    width: 600px;
     margin-top: 20px;
+    margin-left: 7px;
+    text-align: justify;
     color: aliceblue;
     font-size: 18px;
 }
 .button{
     display: flex;
     color: aliceblue;
-    margin: 30px 0 0 13%;
-    transition: 0.2s;
+    margin: 30px 0 ;
 }
 .button .conb{
     box-shadow: rgba(112, 112, 112, 0.466) 0px 7px 29px 0px;
@@ -196,9 +217,9 @@ nav .text h1::after{
     transition: 0.3s;
   }
   .button .conb:hover{
-    background-color: #947017;
+    background-color: #ffac1cd3;
     transition: border-radius 0.3s;
-    box-shadow: #947017 0px 7px 29px 0px;
+    box-shadow: #FFAC1C 0px 7px 29px 0px;
 
   }
 
@@ -207,8 +228,7 @@ nav .text h1::after{
 .social{
  position: absolute;
  bottom: 70px;
- left: 14%;
- transition: 0.2s;
+ left: 320px;
 }
 .social .icons i{
     color: aliceblue;
@@ -219,7 +239,7 @@ nav .text h1::after{
 .social .icons i:hover{
     transition: 0.3s;
     scale: 1.5;
-    text-shadow: rgb(0, 255, 255) 0px 0 20px;
+    text-shadow: #FFAC1C 0px 0 20px;
 }
 
 
@@ -271,103 +291,62 @@ nav .text h1::after{
     box-shadow: #947017 0px 7px 29px 0px;
 }
 
-    
-
-
-
-@media only screen and (max-width: 1150px) {
-    nav {
-        margin: 0 10%;
-        transition: 0.2s;
-        padding: 10px 20px;
-      }
-      nav .text{
-          display: none;
-      }
-      nav div img{
-          width: auto;
-          height: 25px;
-      }
-      .title{
-        margin: 20vh 0 0 10%;
-        transition: 0.2s;
-     }
-     .title .imgt img{
-        width: auto;
-        height: 100px;
-    }
-    .title .imgo img{
-        width: auto;
-        height: 20px;
-        margin: 3px;
-    
-    }
-    .title p{
-        font-family: navbar;
-        font-weight: 100;   
-        width: 500px;
-    }
-     .button{
-        margin: 30px 0 0 9%;
-        transition: 0.2s;
-     }
-     .button .conb{
-        scale: 0.9;
-     }
-     .social{
-        bottom: 70px;
-        left: 11%;
-        transition: 0.2s;
-       }
-}
 @media only screen and (max-width: 700px) {
-    nav {
-      margin: 0 5%;
-      transition: 0.2s;
-      padding: 10px 20px;
+    body {
+      background-color: lightblue;
+    }
+    nav{
+        padding: 0 10px;
+        margin: 0;
+    }
+    .cursor{
+        top: -22px;
+        left: -15px;
     }
     nav .text{
         display: none;
-    }
-    nav div img{
-        width: auto;
-        height: 25px;
+
     }
     .title{
-        text-align: center;
-        transition: 0.2s;
-        margin: 0 20px;
-        margin-top: 25vh;
-     }
-     .title .imgt img{
-        width: auto;
-        height: 80px;
+        margin: 10vh 20px;
+        display: grid;
+        place-items: center;
     }
-    .title .imgo img{
-        width: auto;
-        height: 17px;
-    
+    .title .imgo h1{
+        display: none;
+        
     }
-    .title p{ 
-        width: auto;
+    .title .imgt h1{
+        font-size: 80px;
+    }
+    .title .imgt h2{
+        display: none;
+    }
+    .title p{
         font-size: 15px;
-    }
-     .button{
-        margin: 20px 0;
-        transition: 0.2s;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-     }
-     .button .conb{
-        scale: 0.8;
-     }
-     .social{
-        position: absolute;
-        bottom: 50px;
-        left: 50%; /* Az elem bal széle a szülő szélességének 50%-ánál lesz */
-        transform: translateX(-50%); /* Az elem közepét igazítja a szülő közepéhez */
-        transition: 0.2s;
+        max-width: 300px;
         text-align: center;
+        margin: 5px 0 ;
+    }
+    .button .conb{
+        font-size: 18px;
+        padding: 5px;
+    }
+    .button h1{
+        font-size: 18px;
+        padding: 5px 20px;
+    }
+    .button i{
+        padding: 6px 13px 3.5px 13px;
+    }
+    
+    .social {
+        position: absolute;
+        bottom: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .social .icons{
+       display: flex;
+    }
   }
-}
