@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
-    cursor: none;
 }
 body{
     cursor: none;
@@ -253,14 +252,14 @@ nav .text h1::after{
 
 
 .htitle .himg{
-    margin: 15% 0 0 150px;
+    margin: 15% 0 0 300px; 
 }
 .htitle .himg img{
     height: 80px;
     width: auto;
 }
 .hbutton {
-    margin: 2% 0px 0px 150px;
+    margin: 2% 0px 0px 300px;
     box-shadow: rgba(112, 112, 112, 0.466) 0px 7px 29px 0px;
     color: aliceblue;
     display: inline-flex; 
@@ -290,10 +289,24 @@ nav .text h1::after{
     background-color: #947017;
     box-shadow: #947017 0px 7px 29px 0px;
 }
+.beta{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.beta h5{
+    color: #ffff;
+}
 
 @media only screen and (max-width: 700px) {
     body {
-      background-color: lightblue;
+      background-color: #625D5D;
+      cursor: pointer;
+    }
+    .cursor
+    {
+ display: none;
     }
     nav{
         padding: 0 10px;
@@ -342,7 +355,7 @@ nav .text h1::after{
     
     .social {
         position: absolute;
-        bottom: 3%;
+        bottom: 4%;
         left: 50%;
         transform: translateX(-50%);
     }
