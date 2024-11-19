@@ -458,7 +458,7 @@ nav .text h1::after{
     
     .social {
         position: absolute;
-        bottom: 6%;
+        bottom: 7%;
         left: 50%;
         transform: translateX(-50%);
     }
