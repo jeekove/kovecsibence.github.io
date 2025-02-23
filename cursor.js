@@ -13,8 +13,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function updateCursor() {
-        cursorX += (mouseX - cursorX) * 0.5; // Lassú követés
-        cursorY += (mouseY - cursorY) * 0.5;
+        cursorX += (mouseX - cursorX) * 1; // Lassú követés
+        cursorY += (mouseY - cursorY) * 1;
         cursor.style.transform = `translate3d(${cursorX}px, ${cursorY}px, 0)`;
         requestAnimationFrame(updateCursor);
     }
